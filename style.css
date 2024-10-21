@@ -1,0 +1,2520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"azure-bold" ;
+    src: url(fonts/latest-med.woff2);
+}
+@font-face {
+    font-family: "azure-medium";
+    src: url(fonts/latest\ \(1\).woff2);
+}
+@font-face {
+    font-family: "azure-flue";
+    src: url(fonts/MWFFluentIcons\ \(2\).woff2);
+}
+
+/*------------------AZURE-NAVBAR-----------------*/
+
+.azure-mob-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mob-top-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.mob-top-left{
+    display: flex;
+    flex-direction: row;
+}
+.microsoft-logo{
+    display: flex;
+    align-items: center;
+    padding: 12px 4px;
+    margin-top: -6px;
+    margin-left: -90px;
+    
+}
+.microsoft-logo img{
+    width: 108px;
+}
+.azure-threelines{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    padding: 6px 0px 8px;
+    padding-left:15px ;
+    gap: 20px;
+
+}
+.mob-bottom-navbar{
+    display: flex;
+}
+
+
+.azure-threelines img{
+    width: 20px;
+    height: 20px;
+}
+.azure-threelines::after{
+    display: inline-block;
+    font-family: azure-flue;
+    content: "";
+    font-size: 16px;
+    margin: 2px 6px 1px 2px;
+    padding: 8px 8px 8px 0px;
+    vertical-align: sub;
+   
+}
+.azure-txt{
+    padding: 7px 15px;
+    margin-left: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.azure-txt p{
+    font-size: 15px;
+    font-family: azure-bold;
+    font-weight: 600;
+    
+ 
+}
+.azure-txt::after{
+    font-family: azure-flue;
+    content: "";
+    padding-left: 9px;
+    margin-top: 2px;
+  
+   
+
+}
+
+/*-----------AZURE-CONTENT-SECTION--------*/
+.azure-main-banner{
+    width: 100%;
+    
+}
+.azure-main-banner img{
+    width: 100%;
+    object-fit: cover;
+}
+.get-start-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 16px;
+    margin-top: 28px;
+    padding-bottom: 52px;
+}
+.limitless-txt p{
+    font-size: 13px;
+    margin-bottom: 12px;
+    font-family: azure-bold;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+}
+.trust-txt p{
+    font-size:30px;
+    font-family: azure-bold;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+}
+.build-txt{
+    display: flex;
+    margin-top: 16px;
+    padding-right: 15px;
+}
+.build-txt p{
+    font-size: 18px;
+    font-family: azure-medium;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+}
+.get-started-btn{
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.get-started-btn button{
+    padding: 12px;
+    background-color: #0078D4;
+    border: 2px solid transparent;
+    color: #fff;
+    width: 100%; 
+    border-radius: 8px;
+    min-height: 52px;
+} 
+.get-started-btn p{
+    font-size: 15px;
+    padding-bottom: 2px;
+    font-family: azure-bold;
+    font-weight: 500;
+    
+}
+.azure-main-desktop{
+    display: none;
+}
+.azure-desk-navbar{
+    display: none;
+}
+
+ /*-----------------FEATURED-SECTION--------------*/
+ .main-section-featured{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+ 
+ }
+   .featured-news{
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    background-color:#fff;
+    border-bottom: 4px solid #004275;
+   
+   }
+   .featured-news-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+   }
+   .featured-news-txt{
+     font-size: 14px;
+     font-family: azure-bold;
+     color: #004275;
+   }
+   .featured-news-content::after{
+     font-family: azure-flue;
+     content: "";
+   }
+   .al-powered-section{
+    display: none;
+   }
+   .desk-featured-section{
+    display: none;
+   }
+   
+   /*----------------------DISCOVER-WHAT-SECTION---------------------*/
+    .discover-what-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 52px 16px;
+        background-image: url(images/azure-power.avif);
+        object-fit: cover; 
+        background-size: cover;
+    }
+
+    .discover-what-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4px;
+    }
+    .discover-what-content h2{
+        font-size: 13px;
+        font-weight: 600;
+        font-family: azure-bold;
+        line-height: 1rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 0.75rem;
+    }
+    .discover-what-content p{
+        font-size: 1.5rem;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -0.05em;
+    }
+    .innovate-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4px;
+    }
+    .inovate-with-al{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 0.8rem;
+        flex: 1;
+     }
+    
+     .inovate-img{
+        padding: 8px 8px 0px;
+     }
+     .inovate-img img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+     }
+     .innovate-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 32px;
+        gap: 10px;
+     }
+     .inovate-content{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+     }
+
+     .innovate-txt-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+     }
+
+     .inovate-txt p{
+        font-size: 18px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+     }
+
+     .secure-txt p{
+        font-size: 16px;
+        font-family: azure-medium;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+    }
+    .explores-txt{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 32px;
+        gap: 8px;
+    }
+    .explores-txt p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        padding-bottom: 2px;
+    }
+    .explores-txt::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+
+    /*------------------SOLUTIONS-SECTION--------------------*/
+    .solutions-section{
+        display: flex;
+        flex-direction: column;
+        padding: 52px 16px;
+    }
+    .txt-solutions{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4px;
+        margin-bottom: 8px;
+    }
+    .txt-solutions h2{
+       font-size: 12px;
+       font-family: azure-bold;
+       line-height: 1rem;
+       font-weight: 600;
+       letter-spacing: .08em;
+       margin-bottom: 12px;
+    }
+    .txt-solutions p{
+        font-size: 24px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -0.05em;
+    }
+    .featured-solutions-content{
+        display: flex;
+        flex-direction: row;
+        margin-top: 24px;
+        white-space: nowrap;
+        overflow: scroll;
+        padding: 0px 4px;
+    }
+    .featured-solutions-content::-webkit-scrollbar{
+        display: none;
+    }
+    .featured-solutions-txt{
+         display: inline-flex;
+         align-items: center;
+         padding: 8px 16px;
+         margin-right: 8px;
+         background-color: #005597;
+         border-radius: 12.5rem;
+    }
+    .featured-solutions-txt p{
+        color: #fff;
+        font-size: 16px;
+        font-family: azure-bold;
+        font-weight: 600;
+
+    }
+    .clouds-txt{
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: #0055971A;
+        border-radius: 200px;
+    }
+    .clouds-txt p{
+        color:#004275;
+        font-size: 16px;
+        font-family: azure-bold;
+        font-weight: 600;
+    }
+    .AI-content-txt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+        padding: 0px 4px;
+        margin-bottom: 24px;
+    }
+    .AI-content-txt p{
+        font-size: 16px;
+        font-family: azure-bold;
+    }
+    .intelligent-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio-txt{
+        padding: 0px 4px;
+    }
+    .portfolio-txt P{
+        display: inline-flex;
+        font-size: 16px;
+        font-family: azure-medium;
+        color: #17253d;
+        margin-bottom: 24px;
+    }
+    .explore-azure-txt p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        margin-bottom: 24px;
+        text-decoration: underline;
+        line-height: 1.25rem;
+        color: #004275;
+        padding: 0px 4px;
+    }
+    .explore-azure-img{
+        margin-bottom: 24px;
+    }
+    .explore-azure-img img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        
+    }
+    .responsible-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4px;
+    }
+    .responsible-txt{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0px;
+        border-top: 1px solid black;
+    }
+    .responsible-txt::after{
+       content: "";
+       font-size: 1em;
+       font-family: azure-flue;
+    }
+    .responsible-txt p{
+        font-size: 18px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        color: #0e1726;
+        white-space: nowrap;
+    }
+    .view-all-section {
+      display: flex;
+      align-items: center;
+      padding: 0px 4px;
+      margin-top: 24px;
+      gap: 8px;
+    }
+    .view-all-section p{
+        font-size: 14px;
+        font-family: azure-bold;
+        padding-bottom: 2px;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+    }
+    .view-all-section::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+    .responsible-ai-txt{
+        display: none;
+    }
+    .responsible-img{
+        display: none;
+    }
+    .responsible-ai-main{
+        display: none;
+    }
+
+    /*------------------------PRODUCT & SERVICES-----------------------*/
+    .main-product-section{
+        display: flex;
+        flex-direction: column;
+        padding: 52px 16px;
+        background-image: url(images/product-img.avif);
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        background-repeat: no-repeat;
+        
+    }
+    .products-overflow-section{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        white-space: nowrap;
+        margin-top: 24px;
+    }
+    .products-overflow-section::-webkit-scrollbar{
+        display: none;
+    }
+    .products-content-section{
+        background-image: url(images/service-img.avif);
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        margin-top: 32px;
+        display:flex;
+        border-radius: 1rem;
+        padding: 0px 4px;
+        border: 2px solid #e6f2fb;
+        
+    }
+    .content-safety-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 16px;
+        gap: 0.75rem;
+    }
+    .content-safety-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .content-safety-txt h2{
+        font-size: 24px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -.05em;
+    }
+    .content-safety-txt p{
+        font-size: 16px;
+        font-family: azure-medium;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+    }
+    .content-safety-btn{
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        width: 100%;
+        background-color: #0078D4;
+        border-radius: 0.5rem;
+        
+    }
+    .content-safety-btn p{
+        color: #fff;
+        font-size: 15px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.37rem;
+        letter-spacing: -0.02em;
+    }
+    .al-service-content{
+        display: flex;
+        flex-direction:column;
+        padding: 0px 4px;
+        margin-top: 12px;
+        gap: 0.75rem;
+        
+    }
+    .al-services-box{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 1rem;
+        flex: 1;
+    }
+    .al-service-img{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+        padding: 10px;
+        background-color: #fefefe;
+        border: 1px solid transparent;
+        width: fit-content;
+    }
+    
+    .al-service-img img{
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+       
+    }
+    .al-service-head p{
+        font-size: 16px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 16px;
+    }
+    .al-service-txt p{
+        font-size: 16px;
+        font-family: azure-medium;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -.03em;
+    }
+    .the-product-txt p{
+        margin-top: 32px;
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        text-decoration: underline;
+    }
+
+    .see-all-txt{
+        display: flex;
+        align-items: center;
+        padding: 0px 4px;
+        margin-top: 32px;
+        gap: 8px;
+    }
+    .see-all-txt p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        padding-bottom: 2px;
+    }
+    .see-all-txt::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+
+    /*------------------------GARTNER-SECTION------------------*/
+
+    .main-gartner-section{
+        background-image: url(images/gartner-back.avif);
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 52px 16px;
+    }
+    .sub-gartner-section{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 0px 4px;
+        border: 2px solid #e6f2fb;
+        border-radius: 16px;
+    }
+    .gartner-img{
+        padding: 8px 12px 0px;
+    }
+    .gartner-img img{
+        width: 100%;
+        border-radius: 16px;
+    }
+    .gartner-content{
+        padding: 16px;
+    }
+    .see-why-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .see-why-content h2{
+        font-size: 24px;
+        font-family: azure-bold;
+        line-height: 2rem;
+        letter-spacing: -.05em;
+        margin-bottom: 16px;
+    }
+    .see-why-content p{
+        font-size: 18px;
+        font-family: azure-medium;
+        font-family: 400;
+        line-height: 1.5rem;
+        letter-spacing: -.03em;
+    }
+    .blog-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        padding: 12px;
+        background-color: #0078D4;
+        border-radius: 0.5rem;
+    }
+    .blog-btn p{
+        font-family: azure-bold;
+        font-size: 15px;
+        padding-bottom: 2px;
+        color: #fff;
+        
+    }
+
+    /*----------------TRANSFORM-SECTION-------------*/
+
+     .main-transform-section{
+        background-image: url(images/transform.avif);
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+       
+     }
+     .sub-transform-section{
+        display: flex;
+        flex-direction: column;
+        padding: 48px 16px;
+     }
+     .resource-txt{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 24px;
+        padding: 0px 4px;
+     }
+     .resource-txt h2{
+        font-size: 12px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1rem;
+        letter-spacing: .08rem;
+        margin-bottom: 12px;
+     }
+     .resource-txt p{
+        font-size: 28px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2.25rem;
+        letter-spacing: -.05em;
+     }
+     .it-professionals-content{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        background-color: #fefefe;
+        border: 2px solid transparent;
+        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+        border-radius: 0.5rem;
+     }
+
+     .it-text-content{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        white-space: nowrap;
+        align-items: center;
+     }
+     .it-txt:nth-child(6){
+        border-right: none;
+     }
+     .it-txt:nth-child(1){
+        border-bottom: 4px solid #004275;
+     }
+
+     .it-professionals-content::-webkit-scrollbar{
+        display: none;
+     }
+
+     .it-txt{
+        display: inline-block;
+        padding: 12px 16px 16px;
+        border-right: 2px solid #dddd;
+        min-width: 65%;
+    
+     }
+     .it-txt p{
+        display: inline-block; 
+        font-size: 16px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+     }
+     .arrow-section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 24px;
+        padding-right: 40px;
+        gap: 10px;
+        margin: 40px 0px 0px;
+     }
+     .arrow-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #004275;
+        border-radius: 500px;
+     }
+
+     .arrow-left::after{
+        content: "";
+        font-family: azure-flue;
+        font-size: 1.25rem;
+        color: #004275;
+     }
+
+     .arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #004275;
+        border-radius: 500px;
+     }
+
+     .arrow-right::after{
+        content: "";
+        font-family: azure-flue;
+        font-size: 1.25rem;
+        color: #004275;
+     }
+     .optimize-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        padding-top: 24px;
+        
+    }
+    .optimize-txt p{
+        font-size: 20px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -0.05em;
+    }
+     .transform-sub-img img{
+         width: 100%;
+         object-fit: cover;
+     }
+     .migrations-txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    .migrations-txt p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        padding-bottom: 2px;
+    }
+    .migrations-txt::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+    .transform-sub-img{
+        background: rgba(255,255,255,0.1);
+        margin-top: 24px;
+        padding: 16px;
+        border-radius: 1rem;
+    }
+
+    /*----------------------------AZURE-GLOBAL-SECTION---------------------------*/
+
+    .azure-global-section{
+        background-image: url(images/global-img.avif);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem; 
+    }
+
+    .sub-global-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 4px;
+        
+    }
+    .azure-global-txt h2{
+        font-family: azure-bold;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 2.5rem;
+        letter-spacing: -0.05em;
+    }
+    .azure-global-txt p{
+        margin-top: 16px;
+        padding: 0px 16px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.75rem;
+        letter-spacing: -0.03em;
+        font-family: azure-bold;
+        color: #dceef8;
+    }
+    .the-globe-btn{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+        background-color: #b3dafa;
+        margin-top: 24px;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+    }
+    .the-globe-btn p{
+        color: #0e1726;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: azure-bold;
+        line-height: 1.37rem;
+        letter-spacing: -.02em;
+    }
+
+    /*---------------------------AZURE-CUSTOMERS-SECTION----------------------*/
+
+    .azure-customers-section{
+        background-image: url(images/cutomers.jpeg);
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+
+     .sub-customers-section{
+        display: flex;
+        flex-direction: column;
+        padding: 52px 16px;
+     }
+
+     .customers-txt{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4px;
+     }
+     .customers-txt h2{
+       font-size: 12px;
+       font-family: azure-bold;
+       font-weight: 600;
+       line-height: 1rem;
+       letter-spacing: .08em;
+       margin-bottom: 12px;
+     }
+
+     .customers-txt p{
+        font-size: 24px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -.05em;
+     }
+
+     .main-customers-scroll{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        margin-top: 24px;
+        padding: 0px 4px;
+        gap: 25px;
+        
+     }
+     
+     .sub-customers-scroll{
+        display: flex;
+        flex-direction: column;
+        background-color: #fefefe;
+        border: 2px solid transparent;
+        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+        border-radius: 1rem;
+        min-width: 100%;
+        margin-bottom: 1px;
+        
+     }
+     
+     .hp-image-section{
+        padding: 8px 8px 0px;
+     }
+
+     .hp-image-section img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+     }
+     .hp-content-section{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 12px;
+        flex: 1;
+        
+     }
+     .hp-logo img{
+        width: 175px;
+        border-radius: .5rem;
+        border: 1px solid #bdc5d2;
+        margin-bottom: 12px;
+     }
+     .hp-content p{
+        font-size: 20px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.75rem;
+        letter-spacing: -.05em;
+        margin-bottom: 24px;
+     }
+     .hp-product-section{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+     }
+     .product-txt p{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -.03em;
+        font-family: azure-bold;
+     }
+     .product-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75em;
+        margin-top: 8px;
+     }
+     .github-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+     }
+     .github-txt a{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.25rem;
+        font-family: azure-bold;
+        color: #0067b8;
+
+     }
+     .github-img{
+        display: flex;
+        align-items: center;
+     }
+     .github-img img{
+        width: 16px;
+        height: 20px;
+     }
+     .case-btn button{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        padding: 12px ;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        color: #fff;
+        font-size: 15px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.375rem;
+        letter-spacing: -.02em;
+        border-radius: 0.5rem;
+     }
+     .main-customers-scroll::-webkit-scrollbar{
+        display: none;
+     }
+     
+     .logo-box-section{
+        display: none;
+     }
+     .view-all-stories{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 4px;
+        margin-top: 24px;
+        gap: 8px;
+     }
+     
+    .view-all-stories p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        padding-bottom: 2px;
+    }
+    .view-all-stories::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+  
+    /*-------------------NEXT-STEP-SECTION----------------*/
+
+    .main-next-section{
+        background-image: url(images/final-img.avif);
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        padding: 56px 16px;
+    }
+    .sub-next-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .take-txt{
+        display: flex;
+        justify-content: center;
+    }
+    .take-txt p{
+        font-size: 28px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2.25rem;
+        letter-spacing: -0.05em;
+        color: #ffff;
+    }
+    .choose-azure{
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 0.5rem;
+        padding: 0px 4px;
+        width: 100%;
+    }
+    .choose-content{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffff;
+        padding: 16px;
+        border-radius: 1rem;
+        flex: 1;
+    }
+
+    .choose-txt{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+    .choose-txt h2{
+        font-size: 18px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+    }
+    .choose-txt p{
+        font-size: 16px;
+        font-family: azure-medium;
+        color: #17253d;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -.03em;
+    }
+    .choose-btn{
+        display: flex;
+        margin-top: 32px;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .choose-btn p{
+        font-size: 14px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.25rem;
+        color: #004275;
+        padding-bottom: 2px;
+    }
+    .choose-btn::before{
+        content: "";
+        font-family: azure-flue;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 8px;
+        background-color: #0078D4;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        color: #ffff;
+    }
+
+    /*------------------------AZURE-MEDIA-SECTION------------*/
+    .azure-media-section{
+        padding: 24px 16px;
+    }
+    .sub-media-section{
+        display: flex;
+        flex-direction: column;
+        padding: 8px 12px;
+    }
+    .azure-media-txt{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        margin: 8px 0px;
+        border: 2px solid transparent;
+        background-color: #e6e6e6;
+        width: fit-content;
+        border-radius: 0.5rem;
+    }
+    .media-get-app p{
+        font-size: 15px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.375rem;
+        letter-spacing: -0.02em;
+    }
+    .azure-final-logo img{
+        width: 24px;
+        margin-right: 8px;
+    }
+    .azure-media-icons{
+        display: flex;
+        flex-direction: row;
+        margin: 8px 0px 8px 12px;
+    }
+    .azure-icons{
+        margin-right: 0.75rem;
+    }
+      .azure-icons img{
+        width: 24px;
+        height: 24px;
+      }
+
+    /*----------------------------FOOTER-SECTION---------------------*/
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        padding: 12px;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+    .explore-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .explore-head{
+        display: flex;
+        padding: 36px 0px 4px;
+    }
+    .explore-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .explore-list ul li{
+        display: flex;
+        padding: 8px 0px;
+        list-style: none;
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        line-height: 16px;
+    }
+
+    .products-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .products-head{
+        display: flex;
+        padding: 36px 0px 4px;
+    }
+    .products-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .products-list ul li{
+        list-style: none;
+        padding: 8px 0px;
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        line-height: 16px;
+    }
+    .solutions-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .solutions-head{
+        display: flex;
+        padding: 36px 0px 4px;
+    }
+    .solutions-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .solutions-list ul li{
+        list-style: none;
+        padding: 8px 0px;
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        line-height: 16px;
+    }
+    .partners-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .partners-head{
+        padding: 36px 0px 4px;
+    }
+    .partners-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .partners-list ul li{
+        list-style: none;
+        padding: 8px 0px;
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        line-height: 16px;
+    }
+    .resources-footer{
+        display:flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .resources-head{
+        padding: 36px 0px 4px;
+    }
+    .resources-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .resources-list ul li{
+        list-style: none;
+        padding: 8px 0px;
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        line-height: 16px;
+    }
+    .cloud-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+    .cloud-head{
+        padding: 36px 0px 4px;
+    }
+    .cloud-head p{
+        font-family: azure-bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #616161;
+    }
+    .cloud-list ul li{
+        list-style: none;
+        padding: 8px 0px;
+        font-size: 11px;
+        line-height: 16px;
+        font-family: azure-medium;
+        color: #616161;
+    }
+
+    /*--------------------------ENGLISH-SECTION--------------------------*/
+
+    .english-section{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        padding: 30px 24px 12px;
+    }
+    .english-txt{
+        display: flex;
+        align-items: center;
+    }
+    .english-txt p{
+        display: inline-block;
+        font-family: azure-medium;
+        font-size: 11px;
+        padding-right: 24px;
+        line-height: 16px;
+        color: #616161;
+    }
+    .english-txt::before{
+        content: "";
+        font-family: azure-flue;
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+    .privacy-txt{
+        display: flex;
+        margin: 8px 0px 16px;
+        padding: 4px 24px 0px 0px;
+    }
+    .privacy-txt p{
+        font-size: 11px;
+        font-family: azure-medium;
+        font-weight: 400;
+        color: #616161;
+    }
+    .txt-consumer{
+        display: flex;
+        padding: 4px 24px 0px 0px;
+    }
+    .txt-consumer p{
+        font-size: 11px;
+        font-family: azure-medium;
+        font-weight: 400;
+        color: #616161;
+    }
+    .sitemap-txt ul {
+        display: flex;
+        flex-direction: row;
+        white-space:nowrap;
+        min-width: 100%;
+    }
+    .sitemap-txt{
+        display: flex;
+        flex-flow: wrap;
+        margin: 12px 0px 3px;
+    }
+    .sitemap-txt p{
+        font-size: 11px;
+        font-family: azure-medium;
+        color: #616161;
+        padding: 6px 10px 0px 0px;
+    }
+
+
+
+/*-----------------------------------------MEDIA-QUERY-----------------------------------------*/
+
+    /*----------------MIN-WIDTH-540PX---------------------*/
+@media screen and (min-width:540px) {
+    .get-start-section{
+        padding: 56px 64px;
+    }
+    .discover-what-section{
+        padding: 56px 64px;
+    }
+    .solutions-section{
+        padding: 56px 64px;
+    }
+    .main-product-section{
+        padding: 56px 64px;
+    }
+    .main-gartner-section{
+        padding: 56px 64px;
+    }
+    .sub-transform-section{
+        padding: 56px 64px;
+    }
+    .the-globe-btn{
+        width: fit-content;
+    }
+    .sub-customers-section{
+        padding: 56px 64px;
+        
+    }
+    .main-next-section{
+        padding: 56px 64px;
+    }
+    .azure-media-section{
+        padding: 56px 64px;
+    }
+    .footer-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+    /*-----------------MIN-WIDTH-768px-------------------*/
+
+@media  screen and (min-width:768px) {
+   .get-start-section{
+    padding: 0px 64px;
+    padding-bottom: 56px;
+   } 
+   .get-started-btn{
+     width: fit-content;
+
+   }
+   .al-powered-section{
+    display: none;
+   }
+   /*------------DISCOVER-WHAT-SECTION-----------*/
+     .discover-what-section{
+        padding: 56px 64px;
+     }
+    /*-----------SOLUTIONS-SECTION------------*/
+
+     .solutions-section{
+        padding: 56px 64px;
+     }
+
+     /*------------------PRODUCTS-SERVICES-----------*/
+
+     .main-product-section{
+        padding: 56px 64px;
+     }
+     .content-safety-btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: fit-content;
+     }
+     
+     /*-----------------GARTNER-SECTION---------------*/
+     .main-gartner-section{
+        padding: 56px 64px;
+     }
+     .blog-btn{
+        justify-content: flex-start;
+        width: fit-content;
+     }
+
+     /*---------------------TRANSFORM-SECTION-----------------*/
+
+     .sub-transform-section{
+        padding-left: 64px;
+        padding-right: 64px;
+     }
+
+     /*-------------------AZURE-GLOBAL-SECTION---------------*/
+     .the-globe-btn{
+        width: fit-content;
+     }
+
+     /*-------------------AZURE-CUSTOMERS-SECTION--------------*/
+     .sub-customers-section{
+        padding: 56px 64px;
+     }
+     .case-btn button{
+        width: fit-content;
+     }
+
+     /*-------------------NEXT-STEP-SECTION----------*/
+     .main-next-section{
+        padding: 56px 64px;
+     }
+
+     /*----------------AZURE-MEDIA-SECTION-------------*/
+
+     .azure-media-section{
+        margin-bottom: -48px;
+        padding: 24px 64px;
+     }
+       
+     .sub-media-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+
+     /*------------------------TRANSFORM-SECTION----------------*/
+
+     .it-txt{
+        min-width: 35%;
+     }
+
+
+     /*-----------------FOOTER-SECTION--------------------*/
+
+     .footer-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+
+    
+}
+ 
+    /*--------------------------MIN-WIDTH-965PX-----------------------*/
+
+@media  screen and (min-width:965px) {
+    .get-start-section{
+        position: absolute;
+        top: 26%;
+       
+    }
+    .azure-main-banner{
+        display: none;
+    }
+    .azure-main-desktop {
+        display: flex;
+        width: 100%;
+    
+    }
+    .mob-top-navbar{
+        display: none;
+    }
+    .azure-main-desktop img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .trust-txt p{
+        font-size: 40px;
+    }
+    .mob-bottom-navbar{
+        display: none;
+    }
+    .limitless-txt p{
+        margin-bottom: 16px;
+    }
+
+    .build-txt {
+       max-width: 415px;
+       margin-top: 24px;
+    }
+
+    .get-started-btn{
+        margin-top: 32px;
+    }
+     
+    /*----------AZURE-DESKTOP-NAVBAR--------*/
+     .azure-desk-navbar{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 24px;
+        height: 54px;
+     } 
+
+     .azure-desk-left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+     }
+     
+     .navbar-items ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+     }
+     .explore-txt{
+       margin-top: -2px;
+     }
+    
+      .navbar-items{
+        margin-left: -3px;
+      }
+     .explore-txt p{
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-family: azure-medium;
+        color: #262626;
+     }
+     .explore-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 11px 16px 13px;
+        margin: 1px -10px 0px 0px;
+     }
+     .microsofts-logo{
+        padding: 16px 6px 16px 10px;
+
+    }
+     .microsofts-logo img{
+        width: 108px;
+     } 
+     
+     .azure-txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 11px 16px 23px;
+        margin: -1px 0px 0px 18px;
+     }
+     .azure-txt p{
+        font-size: 18px;
+     }
+     .explore-content::after{
+        font-family: azure-flue;
+        content: "";
+        font-size: 10px;
+        padding: 7px;
+        font-weight: 700;
+        margin-top: 1px;
+        margin-left: -1px;
+       
+     }
+     .azure-txt::after{
+        display: none;
+     }
+     .azure-desk-right{
+        display: none;
+     }
+     
+
+     /*-------------------------------AL-POWERED-SECTION------------------------*/
+
+     .al-powered-section{
+        display: flex;
+        background: linear-gradient( 180deg, #002948 0%, #004275 98.96%);
+        
+     }
+
+     .al-powered-subcontent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 32px 56px;
+        gap: 55px;
+        
+     }
+
+     .al-powered-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 12px 12px 12px 0px;
+     }
+
+     .al-powered-txt p{
+        font-size: 24px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -0.05em;
+        color: #f4fafd;
+     }
+
+     .need-help-txt p{
+        font-size: 14px;
+        font-family: azure-medium;
+        font-weight: 400;
+        line-height: 1rem;
+        letter-spacing: -0.03em;
+        color:#dceef8;
+        white-space: nowrap;
+     }
+
+     .ask-question-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .625rem;
+
+
+     }
+
+     .ask-question-btn button{
+        display: flex;
+        width: 100%;
+        padding: 20px 215px 20px 16px;
+        border-radius: 0.5rem;
+        background-color: #fefefe;
+        font-family: azure-medium;
+        font-size: 16px;
+        white-space: nowrap;
+        border-bottom: 4px solid #0078D4;
+        
+     }
+
+     .how-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+     }
+
+     .how-will-content button{
+        display: flex;
+        padding: 8px 10px;
+        background: linear-gradient( 180deg, #002948 0%, #004275 98.96%);
+        border: 1px solid #8dc8e8;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        font-family: azure-medium;
+        color: #f4fafd;
+     }
+
+     .how-can-content button{
+        display: flex;
+        padding: 8px 10px;
+        background: linear-gradient( 180deg, #002948 0%, #004275 98.96%);
+        border: 1px solid #8dc8e8;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        font-family: azure-medium;
+        color: #f4fafd;
+     }
+     /*------------------------------FEATURED-SECTION---------------------*/
+     .featured-news-content{
+        display: none;
+     }
+     .featured-news{
+       border-bottom: 2px solid transparent;
+       box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
+    }
+     
+     .desk-featured-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 56px;
+        min-height: 65px;
+     }
+     .desk-featured-content{
+         display: flex;
+         margin-left: 4px;
+     }   
+    .desk-featured-section:first-child{
+        color: red;
+     }
+   
+     .desk-featured-txt p{
+        font-size: 14px;
+        font-family: azure-bold;
+        color: #004275;
+        margin-right: 48px;
+        padding: 0px 0px 4px 4px;
+        white-space: nowrap;
+        font-weight: 500;
+        letter-spacing: -.05em;
+        
+     }
+     .get-start-btn{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 8px 16px;
+        background-color: #0078D4;
+        min-height: 57px;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        
+     }
+     .get-start-btn p{
+        font-size: 15px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.375rem;
+        letter-spacing: -0.02em;
+        color: #fff;
+     }
+
+     /*-------------------DISCOVER-WHAT-SECTION-----------------*/
+
+     .discover-what-section{
+        padding: 96px 48px;
+     }
+     .discover-what-content{
+        padding: 0px 8px;
+     }
+
+     .innovate-section{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 8px;
+        margin: 48px 0px 0px;
+     }
+     .inovate-with-al{
+        flex: 1 ;
+     }
+     .inovate-content{
+        display: flex;
+        justify-content:space-between;
+        padding: 24px;
+        flex: 1;
+        
+     }
+     .secure-txt{
+        padding-right: 24px;
+     }
+     .explores-txt{
+        margin-top: 48px;
+     }
+
+     /*-----------------SOLUTIONS-SECTION----------------*/
+     
+    .main-img-section{
+        display: none;
+    }
+    .responsible-ai-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsible-ai-txt{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 0px;
+        margin-top: 24px;
+        gap: 5px;
+        
+    }
+    .responsible-ai-txt::after{
+       content: "";
+       font-size: 1em;
+       font-family: azure-flue;
+    }
+    .responsible-ai-txt p{
+        font-size: 18px;
+        font-family: azure-bold;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        color: #0e1726;
+        white-space: nowrap;
+    }
+    .responsible-txt{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .05rem;
+    }
+    .portfolio-txt{
+        width: 65%;
+    }
+    .featured-solutions-content{
+        padding-bottom: 30px;
+        margin-top: 40px;
+    }
+    .sub-responsible-section{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        overflow: scroll;
+        width: 70%;
+        
+    }
+    .main-responsible-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .responsible-img {
+        display: flex;
+       
+
+    }
+    .responsible-img img{
+        width: 453px;
+        height: 340px;
+        border-radius: 16px;
+    }
+    .responsible-txt p{
+        white-space: wrap;
+    }
+    .solutions-section{
+        padding: 96px 56px;
+    }
+
+    /*-------------------PRODUCT & SERVICE-------------------------*/
+
+    .al-service-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0px 8px;
+    }
+    .the-product-txt p{
+        margin-top: 48px;
+    }
+    .main-product-section{
+        padding: 96px 56px;
+    }
+    .products-overflow-section{
+        margin-top: 48px;
+    }
+    .products-content-section{
+        height: 380px;
+    }
+   
+
+    /*------------------GARTNER-SECTION-------------------*/
+
+    .sub-gartner-section{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0px 8px;
+    }
+    .see-why-content{
+        margin-top: 96px;
+    }
+    .blog-btn{
+        margin-top: 96px;
+    }
+    .gartner-content{
+       padding: 24px 56px 24px 24px;
+    }
+    .gartner-img{
+        padding: 8px 16px 8px 0px;
+    }
+    .gartner-img img{
+        width: 440px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .main-gartner-section{
+        padding: 96px 56px;
+    }
+    /*-------------------TRANSFORM-SECTION-----------------*/
+
+    .sub-transform-section{
+        padding: 96px 56px;
+    }
+    .transform-sub-img {
+        margin: 32px 152px 0px;
+        width: 600px;
+        padding: 24px;
+    }
+    .arrow-section{
+        display: none;
+    }
+    .it-professionals-content{
+        display: flex;
+        justify-content: center;
+    }
+
+     /*----------------------AZURE-GLOBAL-SECTION--------------*/
+     .azure-global-section{
+        padding-top: 6.5rem;
+        padding-bottom: 6.5rem;
+     }
+     .azure-global-txt h2{
+        font-size: 40px;
+     }
+     .azure-global-txt p{
+        margin: 24px 0px 0px;
+        padding: 0px 48px;
+     }
+     .the-globe-btn{
+        margin-top: 32px;
+     }
+
+     /*----------------------AZURE-CUSTOMERS-SECTION-------------*/
+      .sub-customers-scroll{
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .hp-content-txt{
+        padding: 24px;
+      }
+      .hp-image-section{
+        padding: 8px 8px 8px 0px;
+      }
+      .hp-image-section img{
+        width: 440px;
+        height: 100%;
+      }
+      .logo-box-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        margin-top: 32px;
+        
+      }
+      .logo-box-content{
+        display: flex;
+        width: fit-content;
+        padding: 16px;
+        width: 200px;
+        border-right: 1px solid transparent;
+        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+        background-color: #fefefe;
+      }
+
+      .logo-box-content:nth-child(6){
+        border-right: none;
+      }
+
+      .logo-box-content:nth-child(1){
+        border-bottom: 4px solid #0078D4;
+      }
+
+      .logo-hp img{
+        width: 116px;
+        height: 100%;
+        padding: 16px;
+      }
+
+      /*------------------------NEXT-STEP-SECTION----------------------*/
+
+      .choose-azure{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .choose-content{
+        flex: 1;
+        padding: 24px;
+        justify-content: space-between;
+      }
+      
+      .choose-btn{
+        margin-top: 48px;
+      }
+
+      /*-------------------------AZURE-MEDIA-SECTION--------------*/
+
+   .azure-media-section{
+    padding: 24px 56px;
+   }   
+
+   /*-----------------------MAIN-NEXT-SECTION-------------------*/
+
+   .main-next-section{
+     padding: 96px 56px;
+   }
+
+   /*-----------------------------CUSTOMERS-SECTION--------------*/
+   .sub-customers-section{
+      padding: 96px 56px;
+   }
+   .case-btn button{
+     padding: 12px 16px;
+   }
+
+   .sitemap-txt{
+      justify-content: center;
+   }
+
+   .it-txt{
+      min-width: 26%;
+   }
+      
+
+     
+}
+ /*----------------------MIN-WIDTH-1440PX------------------*/
+
+@media  screen and (min-width:1440px) {
+    .azure-desk-navbar{
+        height: 56px;
+        padding: 0px 72px;
+    }
+    .azure-desk-right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        margin-left: -30px;
+    }
+    .search-list ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+    .search-content{
+        display: flex;
+        align-items: center;
+        padding: 0px 9px 0px;
+        margin-right: 18px;
+        
+    }
+    .search-content p{
+        font-size: 13px;
+        font-family: azure-medium;
+    }
+
+    .learn-content{
+        display: flex;
+        padding: 0px 8px;
+        align-items: center;
+        margin-top: -3px;
+        margin-left: 3px;
+    }
+    .learn-content p{
+        font-size: 13px;
+        font-family: azure-medium;
+    }
+    
+    .get-with-btn{
+        display: flex;
+        align-items: center;
+        margin: 0px 8px 0px;
+        margin-top: -1px;
+        
+    }
+    .get-with-btn button {
+        display: flex;
+        align-items: center;
+        padding:   6px 8px;
+        background-color: #0078D4;
+        color: #fff;
+        border: 1px solid transparent;
+        font-size: 13px;
+        font-family: azure-medium;
+        border-radius: 3px;
+    }
+    .sign-in-btn{
+        display: flex;
+        align-items: center;
+        margin: 0px 8px 0px;
+    }
+    .sign-in-btn button{
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+        font-family: azure-medium;
+        background-color: #fff;
+        padding: 7px 7px ;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .search-content::after{
+        font-family: azure-flue;
+        content: "";
+        padding-left: 5px;
+    }
+
+    .azure-txt{
+        margin-top: -4px;
+    }
+    .explore-content{
+        margin-top: -1px;
+    }
+    .trust-txt p{
+        font-size: 48px;
+        letter-spacing: -0.05em;
+        margin-bottom: 10px;
+    }
+    .azure-main-desktop img{
+        height: 630px;
+    }
+    .get-start-section{
+        top: 23%;
+        margin-left: 7px;
+        margin-top: 30px;
+    }
+
+    .limitless-txt p{
+        font-size: 11px;
+        margin-bottom: 24px;
+        line-height: 1rem;
+        letter-spacing: 0.09rem;
+        font-weight: 600;
+    }
+    .build-txt{
+        max-width: 585px;
+    }
+    .build-txt p{
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .get-started-btn p{
+        letter-spacing: -0.02em;
+    }
+    .get-started-btn button{
+        padding: 12px 16px;
+    }
+    .build-txt{
+        margin-top: 22px;
+    }
+
+    /*------------AL-POWERED-SECTION------------*/
+
+    .al-powered-subcontent{
+        padding: 32px 72px;
+        gap: 200px;
+    }
+    .ask-question-btn button{
+        padding-right: 460px;
+    }
+
+    /*----------------FEATURED-SECTION------------*/
+        .desk-featured-section{
+            padding: 0px 72px;
+        }
+        .get-start-btn{
+            min-height: 37px;
+        }
+
+    /*--------------SOLUTIONS-SECTION--------------*/
+    
+    .responsible-img img{
+        width: 650px;
+        height: 480px;
+    }
+    .txt-solutions p{
+        font-size: 32px;
+    }
+
+    /*-----------------PRODUCT & SERVICES --------------*/
+    
+     .products-service-section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 48px;
+     }
+     .products-content-section{
+        width: 750px;
+        height: 520px;
+     }
+
+     /*---------------------GARTNER-SECTION---------------*/
+
+     .gartner-content{
+        padding: 24px 74px 24px 24px;
+     }
+     .gartner-img img{
+        width: 635px;
+     }
+     .see-why-content h2{
+        font-size: 32px;
+     }
+     .see-why-content p{
+        font-size: 20px;
+        line-height: 2rem,1.75rem;
+     }
+
+     /*--------------------TRANSFORM-SECTION------------------*/
+
+     .transform-sub-img {
+        margin: 32px 222px 0px 272px;
+        width: 800px;
+        padding: 24px;
+    }
+    .resource-content{
+        margin: 0px 270px 32px;
+        padding:72px 0px 0px ;
+    }
+    .resource-txt p{
+        font-size: 40px;
+    }
+    .optimize-txt p{
+        font-size: 24px;
+    }
+
+    /*----------------------AZURE-GLOBAL-SECTION---------------------*/
+     .azure-global-txt h2{
+        font-size: 48px;
+     }
+     .azure-global-btn{
+        font-size: 20px;
+     }
+
+     /*-----------------------AZURE-MEDIA-SECTION---------------------*/
+
+     .azure-media-section{
+        padding: 24px 72px;
+     }
+
+     /*---------------------AZURE-FOOTER-SECTION--------------------*/
+
+     .footer-section{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 72px;
+        justify-content: space-between;
+     }
+     .explore-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     .products-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     .solutions-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     .partners-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     .resources-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     .cloud-footer{
+        padding: 0px 12px 0px 0px;
+     }
+     
+     .discover-what-section{
+        padding: 96px 72px;
+     }
+     .solutions-section{
+        padding: 96px 72px;
+     }
+     .main-product-section{
+        padding: 96px 72px;
+     }
+     .main-gartner-section{
+        padding: 96px 72px;
+     }
+     .sub-transform-section{
+        padding: 96px 72px;
+     }
+
+     /*--------------HP-CONTENT--------------*/
+     .hp-content-txt{
+       width: 100%;
+       padding: 24px 72px 24px 24px;
+     }
+     .hp-image-section img{
+       width: 630px;
+       height: 505px;
+     }
+     .sub-customers-section{
+        padding: 96px 72px;
+     }
+
+    .hp-products-section{
+       display: flex;
+       margin-top: 147px;
+       justify-content: flex-end;
+    }
+
+    .it-txt{
+        min-width: 17%;
+    }
+    .hp-content p{
+        font-size: 24px;
+    }
+    .desk-featured-section{
+        min-height: 56px;
+    }
+   
+    .english-section{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 30px 72px 16px;
+    }
+    .privacy-txt{
+        margin: 0px;
+    }
+    .sitemap-txt{
+        margin: 0px;
+    }
+    .sitemap-txt p{
+        padding: 0px 24px 4px 0px;
+    }
+    .txt-consumer{
+        padding: 0px 24px 4px 0px;
+    }
+    .privacy-txt{
+        padding: 0px 24px 4px 0px;
+    }
+   
+}
